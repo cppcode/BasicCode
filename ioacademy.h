@@ -26,6 +26,7 @@ using namespace std;
 #ifdef _DEBUG
 	#define IOTRACE(...) printf(__VA_ARGS__)
 #else
+	#define IOTRACE(...) 
 #endif
 
 namespace io 
@@ -304,7 +305,7 @@ namespace io
 
 			if (hwnd == 0)
 			{
-				IOTRACE("[DEBUG] ï¿½ï¿½ï¿½ï¿½ : %s Serverï¿½ï¿½ Ã£ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.\n", name.c_str());
+				IOTRACE("[DEBUG] ½ÇÆÐ : %s Server¸¦ Ã£À»¼ö ¾ø½À´Ï´Ù.\n", name.c_str());
 				return -1;
 			}
 			return (int)hwnd;
