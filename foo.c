@@ -2,6 +2,7 @@
 
 void foo()
 {
+	printf("smkang2\n");
 	printf("foo\n");
 }
 
